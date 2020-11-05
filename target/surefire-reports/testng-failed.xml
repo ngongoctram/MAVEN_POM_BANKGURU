@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Live Guru 99]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="commons.MethodListener"/>
+    <listener class-name="commons.ExtentTestListener"/>
+  </listeners>
+  <test name="Run on FireFox browser(failed)">
+    <classes>
+      <class name="com.liveguru.frontend.TestcaseForLiveGuru">
+        <methods>
+          <include name="TC_02_VerifyAccountInformation"/>
+          <include name="afterClass"/>
+          <include name="TC_04_VerifyDiscountCoupon"/>
+          <include name="beforeClass"/>
+          <include name="TC_10_VerifySearch"/>
+        </methods>
+      </class> <!-- com.liveguru.frontend.TestcaseForLiveGuru -->
+    </classes>
+  </test> <!-- Run on FireFox browser(failed) -->
+</suite> <!-- Failed suite [Live Guru 99] -->

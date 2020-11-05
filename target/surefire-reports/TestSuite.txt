@@ -1,0 +1,39 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 99.931 s <<< FAILURE! - in TestSuite
+TC_02_VerifyAccountInformation(com.liveguru.frontend.TestcaseForLiveGuru)  Time elapsed: 1.078 s  <<< FAILURE!
+java.lang.AssertionError: expected [Tony] but found []
+	at com.liveguru.frontend.TestcaseForLiveGuru.TC_02_VerifyAccountInformation(TestcaseForLiveGuru.java:100)
+
+TC_04_VerifyDiscountCoupon(com.liveguru.frontend.TestcaseForLiveGuru)  Time elapsed: 4.436 s  <<< FAILURE!
+java.lang.AssertionError: expected [$95.0] but found [$100.00]
+	at com.liveguru.frontend.TestcaseForLiveGuru.TC_04_VerifyDiscountCoupon(TestcaseForLiveGuru.java:129)
+
+TC_10_VerifySearch(com.liveguru.frontend.TestcaseForLiveGuru)  Time elapsed: 34.772 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Timed out after 30 seconds waiting for visibility of element located by By.xpath: //ul[@class='products-grid products-grid--max-4-col first last odd']//li[@class='item last']/div[@class='product-info']
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-46N5C2F', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d32dd0a2-ba09-42d2-9e91-3a1c4ad09134
+	at com.liveguru.frontend.TestcaseForLiveGuru.TC_10_VerifySearch(TestcaseForLiveGuru.java:237)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: {"method":"xpath","selector":"//ul[@class='products-grid products-grid--max-4-col first last odd']//li[@class='item last']/div[@class='product-info']"}
+Command duration or timeout: 30.08 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-46N5C2F', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d32dd0a2-ba09-42d2-9e91-3a1c4ad09134
+*** Element info: {Using=xpath, value=//ul[@class='products-grid products-grid--max-4-col first last odd']//li[@class='item last']/div[@class='product-info']}
+	at com.liveguru.frontend.TestcaseForLiveGuru.TC_10_VerifySearch(TestcaseForLiveGuru.java:237)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: {"method":"xpath","selector":"//ul[@class='products-grid products-grid--max-4-col first last odd']//li[@class='item last']/div[@class='product-info']"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-46N5C2F', ip: '192.168.1.13', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
+Driver info: driver.version: unknown
+

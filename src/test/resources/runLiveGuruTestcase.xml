@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Live Guru 99" parallel="false">
+
+   <listeners>
+      <listener class-name ="org.uncommons.reportng.HTMLReporter" />
+      <listener class-name ="org.uncommons.reportng.JUnitXMLReporter" />
+      <listener class-name ="commons.MethodListener" />
+      <listener class-name ="commons.ExtentTestListener" />
+   </listeners>
+	<test name="Run on FireFox browser">
+		<classes>
+			<class name="com.liveguru.frontend.TestcaseForLiveGuru" />
+		</classes>
+	</test>
+</suite> 
